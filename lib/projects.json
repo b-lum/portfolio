@@ -1,62 +1,74 @@
 [
     {
-        "title": "Carpool Optimizer",
+        "title": "Carpool Optimizer ",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, iure ex veniam perspiciatis id dolorem pariatur itaque nulla odio obcaecati adipisci corrupti necessitatibus eligendi aut laboriosam. Consequatur quisquam mollitia at!"
+        "description": "Full stack web app to automize creating carpools. Uses Express, React, Node.js, and Docker. Has options for using either public OSRM API calls or a locally set up OSRM API."
     },
     {
-        "title": "Accusantium quibusdam eius quis.",
+        "title": "Draggon Boat Lineup Creater",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Ut nostrum, minima iure unde repellendus reiciendis quidem sed ullam incidunt reprehenderit perferendis, optio, dolorem tenetur fugiat assumenda ipsa nam aspernatur. Amet, excepturi mollitia. Nisi nobis culpa perferendis cupiditate accusamus."
+        "description": "React web app for creating practice and race lineups for my dragon boat team. Features drag to drop, roster lookup, and other google-sheet style functions. Automation work in progress."
     },
     {
-        "title": "Fugit iste officiis harum.",
+        "title": "F1-Telemetry-App",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Esse quas tempora dignissimos cupiditate impedit neque est, quo ducimus voluptatum maiores accusantium, nisi tempore enim sit officia, voluptas repudiandae recusandae! Eveniet libero accusantium quia nostrum similique debitis beatae. Libero."
+        "description": "Full stack app for tracking and recording real time telemetry for F12020 game. Uses FAST API, React, Node.js, and Supabase database with PostgreSQL."
     },
     {
-        "title": "Esse libero quos dolorem.",
+        "title": "Oversteer Detecter",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Animi nesciunt quae deleniti doloremque suscipit cum unde magnam? Sunt consequuntur illo ducimus error consectetur, hic perferendis quidem debitis earum ex veniam dolore quisquam, praesentium libero inventore voluptate iusto blanditiis!"
+        "description": "Fine-tuned VideoMAE Base Kinetics for onboard oversteer detection using resized positional embeddings. Reduced validation loss by 24% and improved accuracy by 2% using custom LoRA adaptation modules. Built and labeled a 972-sample dataset (nosteer, oversteer, understeer) using Hugging Face Datasets."
     },
     {
-        "title": "Nobis totam deleniti qui.",
+        "title": "Gaming PC Benchmarking",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Recusandae temporibus expedita error dignissimos, rerum doloribus commodi voluptates at eos neque? Ipsa aliquam unde cupiditate recusandae earum dicta cumque voluptatibus tempore quas tenetur distinctio adipisci, magni saepe ex sint?"
     },
     {
-        "title": "Totam eligendi provident itaque!",
+        "title": "3D-Space-Planner",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Quas atque, eaque at consectetur necessitatibus repudiandae! Animi incidunt rerum hic sed mollitia, praesentium porro corporis, maiores illum quos esse modi eligendi illo consequatur temporibus! Dicta molestiae accusantium autem deserunt."
+        "description": "Light weight CAD software for visualizaing 3D spaces built entirely with React. Inspired by my small dorm room."
     },
     {
-        "title": "Necessitatibus laboriosam porro dolores?",
+        "title": "NutriAI",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Omnis minima sunt quibusdam ea incidunt itaque earum excepturi necessitatibus, quae ullam ipsam perspiciatis, ad eveniet temporibus molestias commodi quas aliquid, fugiat ex. Pariatur, a provident quibusdam expedita laudantium atque."
+        "description": "SFHacks 2025 submission project. Uses prompt tuning and Gemeni Api to create user custom water and meal planner."
     },
     {
-        "title": "Ratione omnis repudiandae eos!",
+        "title": "Socioeconomic Outages",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Distinctio aut tempore illo fuga quisquam deserunt similique aperiam sapiente reiciendis, ab placeat nam error magnam, iste assumenda omnis harum. Atque fugit optio at laudantium adipisci reprehenderit commodi provident magni!"
+        "description": "Analyze socioeconomic factors on outage impact. ML training, etc...."
     },
     {
-        "title": "Illo, optio. Reiciendis, earum!",
+        "title": "Secret-Scanner",
+        "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Illo reprehenderit odit repellat repellendus, cumque dolore autem minus neque ut blanditiis consectetur explicabo quis dicta, veniam provident nulla itaque error dolorum fugiat asperiores consequatur rem ratione! Debitis, ipsa ullam."
+        "description": "Just a React Web App with confidence scores for detecting API keys in text and GitHub repos."
     },
     {
-        "title": "Commodi quidem eaque error!",
+        "title": "WuGraph",
+        "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Laborum nisi est laudantium quidem velit repellendus incidunt, reprehenderit doloribus distinctio minima! Illo a reprehenderit soluta iste accusamus iusto necessitatibus voluptatem, nemo et ratione voluptates, cumque sapiente autem impedit. Vero!"
+        "description": "Practice OOP, data structures, and algorithms."
     },
     {
-        "title": "Eveniet repudiandae magni consequatur!",
+        "title": "Country Data Project",
+        "year": "2023",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Eligendi illum autem quisquam odio natus, rem voluptatem debitis eaque nesciunt ipsum tempore velit, delectus pariatur esse sunt quidem, saepe dolorum animi similique maiores et aliquid nihil deserunt! Nostrum, temporibus."
+        "description": "Learned how to parse CSV files in Java."
     },
     {
-        "title": "Sequi distinctio assumenda pariatur.",
+        "title": "TextExcel.",
+        "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Perferendis sed ullam quae enim saepe, asperiores porro tempore laborum optio excepturi molestiae illum expedita sint sunt quaerat, aperiam, quis recusandae culpa reiciendis nesciunt aliquam dolorum possimus. Incidunt, accusamus obcaecati."
+        "description": "TextExcel project in Java. Works in terminal."
     }
 ]
