@@ -6,7 +6,7 @@
         "description": "Full stack web app to automize creating carpools. Uses Express, React, Node.js, and Docker. Has options for using either public OSRM API calls or a locally set up OSRM API."
     },
     {
-        "title": "Draggon Boat Lineup Creater",
+        "title": "Dragon Boat Lineup Creater",
         "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "React web app for creating practice and race lineups for my dragon boat team. Features drag to drop, roster lookup, and other google-sheet style functions. Automation work in progress."

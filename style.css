@@ -102,6 +102,7 @@ label {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
   gap: 1em;
+  padding-top: 1em;
 
 }
 
@@ -161,3 +162,56 @@ h1, h2, h3, h4, h5, h6 {
 #profile-stats dd {
   grid-row: 2;
 }
+
+#projects-pie-plot {
+  max-width: 20em;
+  margin-block: 2em;
+
+  overflow: visible;
+}
+
+.swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  aspect-ratio: 1 / 1;
+  background: var(--color);
+  border-radius: 3px; /* or 50% for circle */
+  margin-right: 6px;
+}
+
+.legend {
+  display: grid;
+  flex: 1;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  gap: 1rem;
+  padding: 1em;
+  list-style: none;
+  margin: 1px;
+  border: 1px solid var(--color-accent);
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+path {
+  fill: var(--color);
+  transition: 300ms;
+  cursor: pointer;
+}
+
+svg:has(path:hover) path:not(:hover) {
+  opacity: 0.5;
+}
+
+.selected {
+  --color: oklch(60% 45% 0) !important;
+}
+
+.selected:is(path) {
+  fill: var(--color);
+}
+

@@ -7,6 +7,7 @@
    <link rel="stylesheet" href="../style.css">
    <script type="module" src="../global.js"></script>
    <script type="module" src="./projects.js"></script>
+   <script src="https://d3js.org/d3.v7.min.js"></script>
 </head>
 <body>
 
@@ -21,10 +22,23 @@
    -->
 
    
-   <h1 class = "projects-title">Projects</h1>
-   <div class="projects">
-
+   <h1 class="projects-title">Projects</h1>
+   <div class="container">
+      <svg id="projects-pie-plot" viewBox="-50 -50 100 100">
+         <path d="M -50 0 A 50 50 0 0 1 50 0 A 50 50 0 0 1 -50 0" fill="red" />
+      </svg>
+      <ul class="legend"></ul>
    </div>
+
+   <input
+      class="searchBar"
+      type="search"
+      aria-label="Search projects"
+      placeholder="🔍 Search projects…"
+   />
+   <div class="projects">
+   </div>
+
 
 
 </body>
