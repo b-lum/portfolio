@@ -104,10 +104,29 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
 
   for (let p of project) {
     const article = document.createElement('article');
+
+    const mediaHTML = p.githubPage
+      ? `<div style="width:100%; height:250px; overflow:hidden; border-radius:8px; position:relative;">
+        <iframe
+          src="${p.githubPage}"
+          title="${p.title} preview"
+          loading="lazy"
+          sandbox="allow-scripts allow-same-origin"
+          style="
+            width:166%;
+            height:166%;
+            border:none;
+            transform: scale(0.6);
+            transform-origin: top left;
+          "
+        ></iframe>
+     </div>`
+  : `<img src="${p.image}" alt="${p.title}">`;
+
     article.innerHTML = `
       <div>
         <${headingLevel}>${p.title}</${headingLevel}>
-        <img src="${p.image}" alt="${p.title}">
+        ${mediaHTML}
         <p>${p.description}</p>
       </div>
       <div>

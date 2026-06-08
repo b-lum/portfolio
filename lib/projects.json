@@ -3,72 +3,84 @@
         "title": "Carpool Optimizer ",
         "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Full stack web app to automize creating carpools. Uses Express, React, Node.js, and Docker. Has options for using either public OSRM API calls or a locally set up OSRM API."
+        "description": "Full stack web app to automize creating carpools. Uses Express, React, Node.js, and Docker. Has options for using either public OSRM API calls or a locally set up OSRM API.",
+        "githubPage": "https://carpool-optimizer-frontend.pages.dev/"
     },
     {
         "title": "Dragon Boat Lineup Creater",
         "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "React web app for creating practice and race lineups for my dragon boat team. Features drag to drop, roster lookup, and other google-sheet style functions. Automation work in progress."
+        "description": "React web app for creating practice and race lineups for my dragon boat team. Features drag to drop, roster lookup, and other google-sheet style functions. Automation work in progress.",
+        "githubPage": "https://dblineups.brandon-lum650.workers.dev/"
     },
     {
         "title": "F1-Telemetry-App",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Full stack app for tracking and recording real time telemetry for F12020 game. Uses FAST API, React, Node.js, and Supabase database with PostgreSQL."
+        "description": "Full stack app for tracking and recording real time telemetry for F12020 game. Uses FAST API, React, Node.js, and Supabase database with PostgreSQL.",
+        "githubPage": null
     },
     {
         "title": "Oversteer Detecter",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Fine-tuned VideoMAE Base Kinetics for onboard oversteer detection using resized positional embeddings. Reduced validation loss by 24% and improved accuracy by 2% using custom LoRA adaptation modules. Built and labeled a 972-sample dataset (nosteer, oversteer, understeer) using Hugging Face Datasets."
+        "description": "Fine-tuned VideoMAE Base Kinetics for onboard oversteer detection using resized positional embeddings. Reduced validation loss by 24% and improved accuracy by 2% using custom LoRA adaptation modules. Built and labeled a 972-sample dataset (nosteer, oversteer, understeer) using Hugging Face Datasets.",
+        "githubPage": null
     },
     {
         "title": "Gaming PC Benchmarking",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Recusandae temporibus expedita error dignissimos, rerum doloribus commodi voluptates at eos neque? Ipsa aliquam unde cupiditate recusandae earum dicta cumque voluptatibus tempore quas tenetur distinctio adipisci, magni saepe ex sint?"
+        "description": "Recusandae temporibus expedita error dignissimos, rerum doloribus commodi voluptates at eos neque? Ipsa aliquam unde cupiditate recusandae earum dicta cumque voluptatibus tempore quas tenetur distinctio adipisci, magni saepe ex sint?",
+        "githubPage": null
     },
     {
         "title": "3D-Space-Planner",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Light weight CAD software for visualizaing 3D spaces built entirely with React. Inspired by my small dorm room."
+        "description": "Light weight CAD software for visualizaing 3D spaces built entirely with React. Inspired by my small dorm room.",
+        "githubPage": "https://b-lum.github.io/3D-Space-Planner/"
     },
     {
         "title": "NutriAI",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "SFHacks 2025 submission project. Uses prompt tuning and Gemeni Api to create user custom water and meal planner."
+        "description": "SFHacks 2025 submission project. Uses prompt tuning and Gemeni Api to create user custom water and meal planner.",
+        "githubPage": null
     },
     {
         "title": "Socioeconomic Outages",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Analyze socioeconomic factors on outage impact. ML training, etc...."
+        "description": "Analyze socioeconomic factors on outage impact. ML training, etc....",
+        "githubPage": null
     },
     {
         "title": "Secret-Scanner",
         "year": "2026",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Just a React Web App with confidence scores for detecting API keys in text and GitHub repos."
+        "description": "Just a React Web App with confidence scores for detecting API keys in text and GitHub repos.",
+        "githubPage": null
     },
     {
         "title": "WuGraph",
         "year": "2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Practice OOP, data structures, and algorithms."
+        "description": "Practice OOP, data structures, and algorithms.",
+        "githubPage": null
     },
     {
         "title": "Country Data Project",
         "year": "2023",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Learned how to parse CSV files in Java."
+        "description": "Learned how to parse CSV files in Java.",
+        "githubPage": null
     },
     {
         "title": "TextExcel.",
         "year": "2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "TextExcel project in Java. Works in terminal."
+        "description": "TextExcel project in Java. Works in terminal.",
+        "githubPage": null
     }
 ]
