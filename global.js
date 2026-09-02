@@ -106,31 +106,41 @@ export function renderProjects(project, containerElement, headingLevel = 'h2') {
     const article = document.createElement('article');
 
     const mediaHTML = p.githubPage
-      ? `<div style="width:100%; height:250px; overflow:hidden; border-radius:8px; position:relative;">
+      ? `<div class="preview">
         <iframe
           src="${p.githubPage}"
           title="${p.title} preview"
           loading="lazy"
           sandbox="allow-scripts allow-same-origin"
           style="
-            width:166%;
-            height:166%;
+            width:250%;
+            height:250%;
             border:none;
-            transform: scale(0.6);
+            transform: scale(0.4);
             transform-origin: top left;
           "
         ></iframe>
      </div>`
-  : `<img src="${p.image}" alt="${p.title}">`;
+  : '';
+
+    const tagsHTML = (p.tech ?? [])
+      .map((t) => `<li>${t}</li>`)
+      .join('');
+
+    const links = [];
+    if (p.repo) links.push(`<a href="${p.repo}" target="_blank" rel="noopener noreferrer">Code</a>`);
+    if (p.githubPage) links.push(`<a href="${p.githubPage}" target="_blank" rel="noopener noreferrer">Live</a>`);
 
     article.innerHTML = `
       <div>
         <${headingLevel}>${p.title}</${headingLevel}>
+        <ul class="tech">${tagsHTML}</ul>
         ${mediaHTML}
         <p>${p.description}</p>
       </div>
-      <div>
-        <p>${p.year}</p>
+      <div class="meta-row">
+        <span class="year">${p.year}</span>
+        <span class="links">${links.join('')}</span>
       </div>
     `;
     containerElement.appendChild(article);

@@ -1,86 +1,158 @@
 [
-    {
-        "title": "Carpool Optimizer ",
-        "year": "2026",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Full stack web app to automize creating carpools. Uses Express, React, Node.js, and Docker. Has options for using either public OSRM API calls or a locally set up OSRM API.",
-        "githubPage": "https://carpool-optimizer-frontend.pages.dev/"
-    },
-    {
-        "title": "Dragon Boat Lineup Creater",
-        "year": "2026",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "React web app for creating practice and race lineups for my dragon boat team. Features drag to drop, roster lookup, and other google-sheet style functions. Automation work in progress.",
-        "githubPage": "https://dblineups.brandon-lum650.workers.dev/"
-    },
-    {
-        "title": "F1-Telemetry-App",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Full stack app for tracking and recording real time telemetry for F12020 game. Uses FAST API, React, Node.js, and Supabase database with PostgreSQL.",
-        "githubPage": null
-    },
-    {
-        "title": "Oversteer Detecter",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Fine-tuned VideoMAE Base Kinetics for onboard oversteer detection using resized positional embeddings. Reduced validation loss by 24% and improved accuracy by 2% using custom LoRA adaptation modules. Built and labeled a 972-sample dataset (nosteer, oversteer, understeer) using Hugging Face Datasets.",
-        "githubPage": null
-    },
-    {
-        "title": "Gaming PC Benchmarking",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Recusandae temporibus expedita error dignissimos, rerum doloribus commodi voluptates at eos neque? Ipsa aliquam unde cupiditate recusandae earum dicta cumque voluptatibus tempore quas tenetur distinctio adipisci, magni saepe ex sint?",
-        "githubPage": null
-    },
-    {
-        "title": "3D-Space-Planner",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Light weight CAD software for visualizaing 3D spaces built entirely with React. Inspired by my small dorm room.",
-        "githubPage": "https://b-lum.github.io/3D-Space-Planner/"
-    },
-    {
-        "title": "NutriAI",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "SFHacks 2025 submission project. Uses prompt tuning and Gemeni Api to create user custom water and meal planner.",
-        "githubPage": null
-    },
-    {
-        "title": "Socioeconomic Outages",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Analyze socioeconomic factors on outage impact. ML training, etc....",
-        "githubPage": null
-    },
-    {
-        "title": "Secret-Scanner",
-        "year": "2026",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Just a React Web App with confidence scores for detecting API keys in text and GitHub repos.",
-        "githubPage": null
-    },
-    {
-        "title": "WuGraph",
-        "year": "2025",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Practice OOP, data structures, and algorithms.",
-        "githubPage": null
-    },
-    {
-        "title": "Country Data Project",
-        "year": "2023",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Learned how to parse CSV files in Java.",
-        "githubPage": null
-    },
-    {
-        "title": "TextExcel.",
-        "year": "2024",
-        "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "TextExcel project in Java. Works in terminal.",
-        "githubPage": null
-    }
+  {
+    "title": "Dragon Boat Team Portal",
+    "year": "2026",
+    "tech": [
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "Postgres",
+      "RLS",
+      "MapLibre GL"
+    ],
+    "description": "Operations portal a 50-person team uses every week: attendance forms, weight-balanced boat lineups, and carpool assignment. Multi-team isolation enforced in Postgres with row-level security across 8 migrations, policies, and RPCs. Sign-up friction was killing response rates, so I moved to passwordless email sign-in with anonymous shared form links. Deployment is private because member profiles hold home addresses.",
+    "repo": "https://github.com/ucsd-dragonboat/db-portal",
+    "githubPage": null
+  },
+  {
+    "title": "Carpool Optimizer",
+    "year": "2026",
+    "tech": [
+      "React",
+      "Vite",
+      "Express",
+      "MapLibre GL",
+      "OSRM",
+      "Docker"
+    ],
+    "description": "Cuts club ride-planning time an estimated 30% with automated seat assignment and pickup-order route optimization. Greedy nearest-neighbor assignment that preserves manual seat picks as hard constraints while respecting per-car capacity and absences. Per-car color-coded routes rendered over self-hosted OSRM, with a runtime toggle to the public API.",
+    "repo": "https://github.com/b-lum/carpool-optimizer",
+    "githubPage": "https://carpool-optimizer-frontend.pages.dev/"
+  },
+  {
+    "title": "F1 Telemetry App",
+    "year": "2025",
+    "tech": [
+      "FastAPI",
+      "Python",
+      "React",
+      "WebSockets",
+      "Supabase"
+    ],
+    "description": "FastAPI WebSocket service that unpacks live F1 2020 UDP telemetry into speed, throttle, brake, and per-wheel slip. The first version dropped frames because every packet hit React state, so I decoupled ingest from render with a client packet queue drained at a fixed 20 FPS.",
+    "repo": "https://github.com/b-lum/f1-telemetry-app",
+    "githubPage": null
+  },
+  {
+    "title": "Oversteer Detector",
+    "year": "2025",
+    "tech": [
+      "PyTorch",
+      "Hugging Face",
+      "PEFT",
+      "LoRA"
+    ],
+    "description": "Fine-tuned VideoMAE to classify oversteer, understeer, and neutral over 972 labeled 60-frame driving clips I built and annotated myself. Interpolated positional embeddings from 16 to 60 frames and cut trainable parameters to 1.3M of 88M with LoRA on query and value projections. Validation loss down 24%.",
+    "repo": "https://github.com/b-lum/Oversteer-Detector",
+    "githubPage": null
+  },
+  {
+    "title": "Gaming PC Benchmarking",
+    "year": "2025",
+    "tech": [
+      "Python",
+      "NumPy",
+      "SciPy",
+      "Matplotlib"
+    ],
+    "description": "Instrumentation study from my Stanford research work. NumPy and SciPy pipeline over HWiNFO64 logs sampled every 2 seconds, cleaning CPU and GPU telemetry across 6 test runs. Welch's t-tests on an added intake fan: CPU temps fell 1.3 degrees C (p < 0.001) while GPU deltas stayed insignificant. I presented the null result.",
+    "repo": "https://github.com/b-lum/Gaming-PC-Benchmarking",
+    "githubPage": null
+  },
+  {
+    "title": "3D Space Planner",
+    "year": "2025",
+    "tech": [
+      "React"
+    ],
+    "description": "Lightweight CAD tool for visualizing 3D spaces, built entirely in React. Inspired by trying to lay out a small dorm room.",
+    "repo": "https://github.com/b-lum/3D-Space-Planner",
+    "githubPage": "https://b-lum.github.io/3D-Space-Planner/"
+  },
+  {
+    "title": "Dragon Boat Lineup Maker",
+    "year": "2026",
+    "tech": [
+      "React",
+      "Cloudflare Workers",
+      "Papa Parse"
+    ],
+    "description": "Standalone lineup builder that pulls the roster from a published Google Sheet and supports drag-and-drop, race and practice layouts, and weight-based sorting. Superseded by the team portal above, kept here as the earlier iteration.",
+    "repo": "https://github.com/b-lum/Db_Lineup_Maker",
+    "githubPage": "https://dblineups.brandon-lum650.workers.dev/"
+  },
+  {
+    "title": "NutriAI",
+    "year": "2025",
+    "tech": [
+      "Python",
+      "Kivy",
+      "Gemini API"
+    ],
+    "description": "SF Hacks 2025 submission. Meal and water planner using prompt tuning against the Gemini API, packaged for Android with Buildozer.",
+    "repo": "https://github.com/b-lum/NutriAI",
+    "githubPage": null
+  },
+  {
+    "title": "Socioeconomic Outages",
+    "year": "2025",
+    "tech": [
+      "Python",
+      "Pandas",
+      "Scikit-learn"
+    ],
+    "description": "Analysis of how socioeconomic factors relate to power outage impact, from raw data cleaning through model training and evaluation.",
+    "repo": "https://github.com/b-lum/socioeconomic-outages",
+    "githubPage": null
+  },
+  {
+    "title": "Secret Scanner",
+    "year": "2026",
+    "tech": [
+      "React"
+    ],
+    "description": "React web app that flags likely API keys in pasted text or a GitHub repo, with a confidence score per match rather than a binary hit.",
+    "repo": "https://github.com/b-lum/Secret-Scanner",
+    "githubPage": null
+  },
+  {
+    "title": "WuGraph",
+    "year": "2025",
+    "tech": [
+      "Java"
+    ],
+    "description": "Graph implementation written to practice object-oriented design, data structures, and traversal algorithms.",
+    "repo": null,
+    "githubPage": null
+  },
+  {
+    "title": "TextExcel",
+    "year": "2024",
+    "tech": [
+      "Java"
+    ],
+    "description": "Terminal spreadsheet in Java: cell references, formula parsing, and arithmetic evaluation.",
+    "repo": null,
+    "githubPage": null
+  },
+  {
+    "title": "College Data Project",
+    "year": "2024",
+    "tech": [
+      "Java"
+    ],
+    "description": "Cal Hacks 11.0 submission in Java, and the project where I learned to parse CSV files and turn raw data into something a program could use.",
+    "repo": "https://github.com/b-lum/CollegeDataProject",
+    "githubPage": null
+  }
 ]
